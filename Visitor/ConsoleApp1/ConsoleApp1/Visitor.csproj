@@ -46,6 +46,10 @@
     <Compile Include="Items\Defence\ChainMail.cs" />
     <Compile Include="Items\Defence\Defence.cs" />
     <Compile Include="Items\Defence\SmallSheld.cs" />
+    <Compile Include="Items\Tool\Axe.cs" />
+    <Compile Include="Items\Tool\Hammer.cs" />
+    <Compile Include="Items\Tool\Saw.cs" />
+    <Compile Include="Items\Tool\Tool.cs" />
     <Compile Include="Items\Weapons\Axe.cs" />
     <Compile Include="Items\Weapons\Bow.cs" />
     <Compile Include="Items\Weapons\Spear.cs" />
@@ -61,7 +65,7 @@
     <Compile Include="Unit\Worker.cs" />
     <Compile Include="Visit\IVisitor.cs" />
     <Compile Include="Visit\IVisitorFight.cs" />
-    <Compile Include="Visit\IVisitorNormalFight.cs" />
+    <Compile Include="Visit\VisitorNormalFight.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

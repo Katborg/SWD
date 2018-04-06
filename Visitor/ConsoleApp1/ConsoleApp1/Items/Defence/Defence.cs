@@ -14,6 +14,11 @@ namespace Visitor
 			return ItemType.Defence;
 		}
 
+		public double GetPower()
+		{
+			return 4;
+		}
+
 		public abstract DefenceType GetDefenceType();
 
 	}

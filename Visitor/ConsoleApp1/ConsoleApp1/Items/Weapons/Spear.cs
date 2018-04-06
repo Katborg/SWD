@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Visitor;
 
-namespace ConsoleApp1.Items.Weapons
+namespace Visitor
 {
 	class Spear : Weapon
 	{

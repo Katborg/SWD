@@ -6,11 +6,15 @@ using System.Threading.Tasks;
 
 namespace Visitor
 {
-	class RomanSoldier : IRomanSoldier
+	public class RomanSoldier : Unit, IRomanSoldier
 	{
+		public new double AcceptVisit(IVisitor visitor)
+		{
+			return visitor.Visit(this);
+		}
 	}
 
-	interface IRomanSoldier : IUnit
+	public interface IRomanSoldier : IUnit
 	{
 		
 	}

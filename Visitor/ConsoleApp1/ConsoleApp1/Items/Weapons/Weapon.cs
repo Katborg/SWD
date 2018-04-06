@@ -7,14 +7,20 @@ using Visitor;
 
 namespace Visitor
 {
-	abstract class Weapon : IItem
+	public abstract class Weapon : IItem
 	{
 		public new ItemType GetType()
 		{
 			return ItemType.Wepeon;
 		}
 
+		public double GetPower()
+		{
+			return 5;
+		}
+
 		public abstract WeaponType GetWeaponType();
+
 
 		
 	}

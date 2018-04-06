@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Visitor
 {
-	class Worker : IWorker
+	public class Worker : Unit, IWorker
 	{
 		
 	}

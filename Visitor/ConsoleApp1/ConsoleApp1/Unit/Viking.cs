@@ -6,11 +6,15 @@ using System.Threading.Tasks;
 
 namespace Visitor
 {
-	class Viking : IViking 
+	public class Viking : Unit, IViking 
 	{
+		public new double AcceptVisit(IVisitor visitor)
+		{
+			return visitor.Visit(this);
+		}
 	}
 
-	interface IViking : IUnit
+	public interface IViking : IUnit
 	{
 
 	}

@@ -6,12 +6,15 @@ using System.Threading.Tasks;
 
 namespace Visitor
 {
-	class EnglishSoldier : IEnglishSoldier
+	public class EnglishSoldier :Unit, IEnglishSoldier
 	{
-		
+		public double AcceptVisit(IVisitor visitor)
+		{
+			return visitor.Visit(this);
+		}
 	}
 
-	interface IEnglishSoldier : IUnit
+	public interface IEnglishSoldier : IUnit
 	{
 
 	}

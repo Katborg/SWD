@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Visitor
 {
-	interface IVisitorFight : IVisitor
+	public interface IVisitorFight : IVisitor
 	{
 
 	}

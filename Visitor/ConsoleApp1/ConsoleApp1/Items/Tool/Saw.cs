@@ -6,13 +6,11 @@ using System.Threading.Tasks;
 
 namespace Visitor
 {
-	public class WarAxe : Weapon
+	class Saw : Tool
 	{
-		public override WeaponType GetWeaponType()
+		public override ToolType GeToolType()
 		{
-			return WeaponType.Axe;
+			return ToolType.Saw;
 		}
 	}
-
-	
 }
