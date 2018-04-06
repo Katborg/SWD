@@ -42,19 +42,22 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Items\Weapon.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Unit\EnglishSoldier.cs" />
+    <Compile Include="Items\Item.cs" />
     <Compile Include="Unit\RomanSoldier.cs" />
     <Compile Include="Unit\Unit.cs" />
     <Compile Include="Unit\Viking.cs" />
     <Compile Include="Unit\Worker.cs" />
+    <Compile Include="Visit\IVisitor.cs" />
+    <Compile Include="Visit\IVisitorFight.cs" />
+    <Compile Include="Visit\IVisitorNormalFight.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Visit\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

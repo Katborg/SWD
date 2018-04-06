@@ -3,16 +3,15 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Visitor;
 
-namespace Visitor
+namespace ConsoleApp1.Items
 {
-	class Worker : IWorker
+	class Weapon : IItem
 	{
-		
-	}
-
-	interface IWorker : IUnit
-	{
-		
+		public ItemType GetType()
+		{
+			return ItemType.Wepeon;
+		}
 	}
 }

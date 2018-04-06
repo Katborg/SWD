@@ -6,13 +6,8 @@ using System.Threading.Tasks;
 
 namespace Visitor
 {
-	class Worker : IWorker
+	interface IVisitorFight : IVisitor
 	{
-		
-	}
 
-	interface IWorker : IUnit
-	{
-		
 	}
 }
