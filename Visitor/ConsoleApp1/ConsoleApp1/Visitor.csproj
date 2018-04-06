@@ -42,7 +42,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Items\Weapon.cs" />
+    <Compile Include="Items\Defence\BigSheld.cs" />
+    <Compile Include="Items\Defence\ChainMail.cs" />
+    <Compile Include="Items\Defence\Defence.cs" />
+    <Compile Include="Items\Defence\SmallSheld.cs" />
+    <Compile Include="Items\Weapons\Axe.cs" />
+    <Compile Include="Items\Weapons\Bow.cs" />
+    <Compile Include="Items\Weapons\Spear.cs" />
+    <Compile Include="Items\Weapons\Sword.cs" />
+    <Compile Include="Items\Weapons\Weapon.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Unit\EnglishSoldier.cs" />

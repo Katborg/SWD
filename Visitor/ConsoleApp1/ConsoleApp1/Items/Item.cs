@@ -8,7 +8,6 @@
 
 	public enum ItemType
 	{
-		None,
 		Tool,
 		Wepeon,
 		Defence
