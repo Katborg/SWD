@@ -3,15 +3,15 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Visitor;
 
-namespace ConsoleApp1.Items
+
+namespace Visitor
 {
-	class Weapon : IItem
+	class Bow : Weapon
 	{
-		public ItemType GetType()
+		public override WeaponType GetWeaponType()
 		{
-			return ItemType.Wepeon;
+			return WeaponType.Bow;
 		}
 	}
 }
