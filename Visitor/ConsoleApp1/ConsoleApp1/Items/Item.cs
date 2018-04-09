@@ -2,16 +2,16 @@
 {
 	public interface IItem
 	{
-		ItemType GetType();
+		//ItemType GetType();
 		double GetPower();
 	}
 
-	public enum ItemType
+	/*public enum ItemType
 	{
 		Tool
 		,Wepeon
 		,Defence
-		//,ToolAndWeapon
+		,ToolAndWeapon
 
-	}
+	}*/
 }

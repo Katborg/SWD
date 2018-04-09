@@ -8,9 +8,9 @@ namespace Visitor
 {
 	class BigSheld : Defence
 	{
-		public override DefenceType GetDefenceType()
+		/*public override DefenceType GetDefenceType()
 		{
 			return DefenceType.BigShield;
-		}
+		}*/
 	}
 }

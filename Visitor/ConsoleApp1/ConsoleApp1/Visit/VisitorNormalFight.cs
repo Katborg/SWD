@@ -9,18 +9,32 @@ namespace Visitor
 		public double Visit(IUnit unit)
 		{
 			List<IItem> items = unit.GetItems();
-			return Calc_power(items);
+
+			double power = 1;
+
+			foreach (var item in items)
+			{
+				if (item is Weapon || item is Defence)
+				{
+					power += item.GetPower();
+				}
+			}
+			return power;
 		}
 
 		public double Visit(IViking unit)
 		{
 			List<IItem> items = unit.GetItems();
-			double power = Calc_power(items);
+			double power = 2;
 
-			//give viking extra power if he has axes
-			foreach (var VARIABLE in items)
+			//give viking extra power if he has axes and calc power
+			foreach (var item in items)
 			{
-				if (VARIABLE is WarAxe) power = power * 1.2;
+				if(item is Weapon || item is Defence)
+				{
+					power += item.GetPower();
+				}
+				if (item is WarAxe) power = power * 1.2;
 			}
 
 			return power;
@@ -29,13 +43,17 @@ namespace Visitor
 		public double Visit(IEnglishSoldier unit)
 		{
 			List<IItem> items = unit.GetItems();
-			double power = Calc_power(items);
+			double power = 1;
 			bool oneBow = false;
 
-			//give EnglishSoldier extra power if he has a bow
-			foreach (var VARIABLE in items)
+			//give EnglishSoldier extra power if he has a bow and calc power
+			foreach (var item in items)
 			{
-				if (VARIABLE is Bow)
+				if (item is Weapon || item is Defence)
+				{
+					power += item.GetPower();
+				}
+				if (item is Bow)
 				{
 					//get extra power for first bow only
 					if(!oneBow) { 
@@ -50,21 +68,21 @@ namespace Visitor
 		public double Visit(IRomanSoldier unit)
 		{
 			List<IItem> items = unit.GetItems();
-			double power = Calc_power(items);
+
+			double power = 2;
 			bool onespear = false;
 			bool onesBigShield = false;
-			
-			//check for spear and shield
-			foreach (var VARIABLE in items)
+
+			//check for spear and shield and calc power
+			foreach (var item in items)
 			{
-#pragma warning disable CS0252 // Possible unintended reference comparison; left hand side needs cast
-				if (VARIABLE is Spear) onespear = true;
-#pragma warning restore CS0252 // Possible unintended reference comparison; left hand side needs cast
+				if (item is Weapon || item is Defence)
+				{
+					power += item.GetPower();
+				}
 
-#pragma warning disable CS0252 // Possible unintended reference comparison; left hand side needs cast
-				if (VARIABLE is BigSheld) onesBigShield = true;
-#pragma warning restore CS0252 // Possible unintended reference comparison; left hand side needs cast
-
+				if (item is Spear) onespear = true;
+				if (item is BigSheld) onesBigShield = true;
 			}
 
 			//give ekstra power if one BigSheild and spear present
@@ -73,7 +91,7 @@ namespace Visitor
 			return power;
 		}
 
-		private double Calc_power(List<IItem> items)
+		/*private double Calc_power(List<IItem> items)
 		{
 			double power = 0;
 			foreach (var item in items)
@@ -85,6 +103,6 @@ namespace Visitor
 			}
 
 			return power;
-		}
+		}*/
 	}
 }

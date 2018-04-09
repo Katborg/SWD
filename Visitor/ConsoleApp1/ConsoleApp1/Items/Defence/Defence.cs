@@ -9,24 +9,24 @@ namespace Visitor
 {
 	abstract class Defence : IItem
 	{
-		public new ItemType GetType()
-		{
-			return ItemType.Defence;
-		}
+		//public new ItemType GetType()
+		//{
+		//	return ItemType.Defence;
+		//}
 
 		public double GetPower()
 		{
 			return 4;
 		}
 
-		public abstract DefenceType GetDefenceType();
+		//public abstract DefenceType GetDefenceType();
 
 	}
 
-	public enum DefenceType
-	{
-		BigShield,
-		SmallShield,
-		ChainMail
-	}
+	//public enum DefenceType
+	//{
+	//	BigShield,
+	//	SmallShield,
+	//	ChainMail
+	//}
 }

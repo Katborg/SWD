@@ -9,9 +9,9 @@ namespace ConsoleApp1.Items.Defence
 {
 	class ChainMail : Visitor.Defence
 	{
-		public override DefenceType GetDefenceType()
-		{
-			return DefenceType.ChainMail;
-		}
+		//public override DefenceType GetDefenceType()
+		//{
+		//	return DefenceType.ChainMail;
+		//}
 	}
 }

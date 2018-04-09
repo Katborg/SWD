@@ -10,17 +10,17 @@ namespace Visitor
 {
 	abstract class Tool : IItem
 	{
-		public  ItemType GetType()
-		{
-			return ItemType.Tool;
-		}
+		//public  ItemType GetType()
+		//{
+		//	return ItemType.Tool;
+		//}
 
-		public double GetPower()
+		public virtual double GetPower()
 		{
 			return 1;
 		}
 
-		public abstract ToolType GeToolType();
+		//public abstract ToolType GetToolType();
 	}
 
 	public enum ToolType

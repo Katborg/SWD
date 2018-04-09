@@ -4,13 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Visitor
+namespace ConsoleApp1.Visit
 {
-	class Hammer : Tool
+	interface IVisitorBuild
 	{
-		/*public override ToolType GetToolType()
-		{
-			return ToolType.Hammer;
-		}*/
 	}
 }

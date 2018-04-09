@@ -63,8 +63,10 @@
     <Compile Include="Unit\Unit.cs" />
     <Compile Include="Unit\Viking.cs" />
     <Compile Include="Unit\Worker.cs" />
-    <Compile Include="Visit\IVisitor.cs" />
-    <Compile Include="Visit\IVisitorFight.cs" />
+    <Compile Include="Visit\Interfaces\IVisitor.cs" />
+    <Compile Include="Visit\Interfaces\IVisitorBuild.cs" />
+    <Compile Include="Visit\Interfaces\IVisitorFight.cs" />
+    <Compile Include="Visit\VisitorNormalBuild.cs" />
     <Compile Include="Visit\VisitorNormalFight.cs" />
   </ItemGroup>
   <ItemGroup>

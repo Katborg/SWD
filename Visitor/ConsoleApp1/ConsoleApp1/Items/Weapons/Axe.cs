@@ -8,10 +8,10 @@ namespace Visitor
 {
 	public class WarAxe : Weapon
 	{
-		public override WeaponType GetWeaponType()
-		{
-			return WeaponType.Axe;
-		}
+		//public override WeaponType GetWeaponType()
+		//{
+		//	return WeaponType.Axe;
+		//}
 	}
 
 	

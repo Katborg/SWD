@@ -9,27 +9,27 @@ namespace Visitor
 {
 	public abstract class Weapon : IItem
 	{
-		public new ItemType GetType()
-		{
-			return ItemType.Wepeon;
-		}
+		//public new ItemType GetType()
+		//{
+		//	return ItemType.Wepeon;
+		//}
 
 		public double GetPower()
 		{
 			return 5;
 		}
 
-		public abstract WeaponType GetWeaponType();
+		//public abstract WeaponType GetWeaponType();
 
 
 		
 	}
-	public enum WeaponType
-	{
-		Sword,
-		Axe,
-		Bow,
-		Spear
-	}
+	//public enum WeaponType
+	//{
+	//	Sword,
+	//	Axe,
+	//	Bow,
+	//	Spear
+	//}
 
 }

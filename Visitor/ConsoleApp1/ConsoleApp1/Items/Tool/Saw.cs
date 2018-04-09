@@ -8,9 +8,14 @@ namespace Visitor
 {
 	class Saw : Tool
 	{
-		public override ToolType GeToolType()
+		public override double GetPower()
+		{
+			return 1.5;
+		}
+
+		/*public override ToolType GetToolType()
 		{
 			return ToolType.Saw;
-		}
+		}*/
 	}
 }

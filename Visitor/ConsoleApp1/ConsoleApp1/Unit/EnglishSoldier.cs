@@ -8,7 +8,7 @@ namespace Visitor
 {
 	public class EnglishSoldier :Unit, IEnglishSoldier
 	{
-		public double AcceptVisit(IVisitor visitor)
+		public override double AcceptVisit(IVisitor visitor)
 		{
 			return visitor.Visit(this);
 		}
