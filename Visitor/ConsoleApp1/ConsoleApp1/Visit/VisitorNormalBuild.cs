@@ -42,7 +42,7 @@ namespace ConsoleApp1.Visit
 					power += item.GetPower();
 					if (item is Axe) power += 3;
 				}
-				if (item is WarAxe) power += 2;
+				
 			}
 			return power;
 		}

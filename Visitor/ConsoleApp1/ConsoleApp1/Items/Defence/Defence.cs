@@ -7,7 +7,7 @@ using Visitor;
 
 namespace Visitor
 {
-	abstract class Defence : IItem
+	abstract class Defence : IItem, IDefence
 	{
 		//public new ItemType GetType()
 		//{

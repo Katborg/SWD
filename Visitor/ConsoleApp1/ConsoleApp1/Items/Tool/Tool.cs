@@ -8,7 +8,7 @@ using Visitor;
 
 namespace Visitor
 {
-	abstract class Tool : IItem
+	abstract class Tool : IItem, ITool
 	{
 		//public  ItemType GetType()
 		//{
@@ -23,11 +23,11 @@ namespace Visitor
 		//public abstract ToolType GetToolType();
 	}
 
-	public enum ToolType
-	{
-		Hammer,
-		Saw,
-		Axe
-	}
+	//public enum ToolType
+	//{
+	//	Hammer,
+	//	Saw,
+	//	Axe
+	//}
 
 }

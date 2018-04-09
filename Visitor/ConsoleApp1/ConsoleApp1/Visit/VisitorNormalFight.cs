@@ -14,7 +14,7 @@ namespace Visitor
 
 			foreach (var item in items)
 			{
-				if (item is Weapon || item is Defence)
+				if (item is IWeapon || item is IDefence)
 				{
 					power += item.GetPower();
 				}
@@ -30,11 +30,11 @@ namespace Visitor
 			//give viking extra power if he has axes and calc power
 			foreach (var item in items)
 			{
-				if(item is Weapon || item is Defence)
+				if(item is IWeapon || item is IDefence)
 				{
 					power += item.GetPower();
 				}
-				if (item is WarAxe) power = power * 1.2;
+				if (item is IAxe) power = power * 1.2;
 			}
 
 			return power;
@@ -49,7 +49,7 @@ namespace Visitor
 			//give EnglishSoldier extra power if he has a bow and calc power
 			foreach (var item in items)
 			{
-				if (item is Weapon || item is Defence)
+				if (item is IWeapon || item is IDefence)
 				{
 					power += item.GetPower();
 				}
@@ -76,7 +76,7 @@ namespace Visitor
 			//check for spear and shield and calc power
 			foreach (var item in items)
 			{
-				if (item is Weapon || item is Defence)
+				if (item is IWeapon || item is IDefence)
 				{
 					power += item.GetPower();
 				}

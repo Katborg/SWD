@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Visitor
 {
-	public class WarAxe : Weapon
+	public class WarAxe : Weapon , ITool, IAxe
 	{
 		//public override WeaponType GetWeaponType()
 		//{
