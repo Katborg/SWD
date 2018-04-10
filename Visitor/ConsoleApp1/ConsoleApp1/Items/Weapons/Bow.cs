@@ -9,9 +9,5 @@ namespace Visitor
 {
 	class Bow : Weapon
 	{
-		//public override WeaponType GetWeaponType()
-		//{
-		//	return WeaponType.Bow;
-		//}
 	}
 }

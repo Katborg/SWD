@@ -10,24 +10,9 @@ namespace Visitor
 {
 	abstract class Tool : IItem, ITool
 	{
-		//public  ItemType GetType()
-		//{
-		//	return ItemType.Tool;
-		//}
-
 		public virtual double GetPower()
 		{
 			return 1;
 		}
-
-		//public abstract ToolType GetToolType();
 	}
-
-	//public enum ToolType
-	//{
-	//	Hammer,
-	//	Saw,
-	//	Axe
-	//}
-
 }

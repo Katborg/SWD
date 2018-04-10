@@ -13,9 +13,4 @@ namespace Visitor
 			return visitor.Visit(this);
 		}
 	}
-
-	public interface IRomanSoldier : IUnit
-	{
-		
-	}
 }

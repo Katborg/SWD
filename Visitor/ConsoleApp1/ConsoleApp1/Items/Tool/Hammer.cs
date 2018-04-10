@@ -8,9 +8,5 @@ namespace Visitor
 {
 	class Hammer : Tool
 	{
-		/*public override ToolType GetToolType()
-		{
-			return ToolType.Hammer;
-		}*/
 	}
 }

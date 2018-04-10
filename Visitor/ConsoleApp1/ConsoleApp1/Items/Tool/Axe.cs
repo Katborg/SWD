@@ -12,9 +12,5 @@ namespace Visitor
 		{
 			return 3;
 		}
-		/*public override ToolType GetToolType()
-		{
-			return ToolType.Axe;
-		}*/
 	}
 }

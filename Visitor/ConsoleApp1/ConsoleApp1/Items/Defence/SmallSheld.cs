@@ -8,9 +8,5 @@ namespace Visitor
 {
 	class SmallShield : Defence
 	{
-		//public override DefenceType GetDefenceType()
-		//{
-		//	return DefenceType.SmallShield;
-		//}
 	}
 }

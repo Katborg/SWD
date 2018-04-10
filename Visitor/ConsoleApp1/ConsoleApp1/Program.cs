@@ -8,7 +8,7 @@ namespace Visitor
 	{
 		static void Main(string[] args)
 		{
-			/*IViking johnViking = new Viking();
+			IViking johnViking = new Viking();
 			
 			johnViking.AddItem(new WarAxe());
 			johnViking.AddItem(new WarAxe());
@@ -20,7 +20,7 @@ namespace Visitor
 			jasperRoman.Name = "Jasper Roman";
 
 			Fight(johnViking,jasperRoman);
-			BuildHouse(johnViking, jasperRoman);*/
+			BuildHouse(johnViking, jasperRoman);
 
 			IRomanSoldier jasperTheRomanBuilder = new RomanSoldier();
 			jasperTheRomanBuilder.Name = "Jasper Roman builder";

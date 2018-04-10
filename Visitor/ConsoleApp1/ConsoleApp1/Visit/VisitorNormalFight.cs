@@ -90,19 +90,5 @@ namespace Visitor
 
 			return power;
 		}
-
-		/*private double Calc_power(List<IItem> items)
-		{
-			double power = 0;
-			foreach (var item in items)
-			{
-				if (item is Weapon || item is Defence)
-				{
-					power += item.GetPower();
-				}
-			}
-
-			return power;
-		}*/
 	}
 }

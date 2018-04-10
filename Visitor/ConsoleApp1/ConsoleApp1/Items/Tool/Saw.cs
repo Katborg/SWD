@@ -12,10 +12,5 @@ namespace Visitor
 		{
 			return 1.5;
 		}
-
-		/*public override ToolType GetToolType()
-		{
-			return ToolType.Saw;
-		}*/
 	}
 }

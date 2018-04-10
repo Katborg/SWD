@@ -25,27 +25,11 @@ namespace Visitor
 		{
 			ItemList.Add(item);
 		}
-
 		public string Name { get; set; }
-
-		public virtual double AcceptVisit(IVisitor visitor)
-		{
-			return visitor.Visit(this);
-		}
-
+		public virtual double AcceptVisit(IVisitor visitor) => visitor.Visit(this);
 		public List<IItem> GetItems()
 		{
 			return ItemList;
 		}
 	}
-
-	 public interface IUnit
-	 {
-		 void PrintItems();
-		double AcceptVisit(IVisitor visitor);
-		List<IItem> GetItems();
-		 void AddItem(IItem item);
-		 
-		 string Name { get; set; }
-	 }
 }
