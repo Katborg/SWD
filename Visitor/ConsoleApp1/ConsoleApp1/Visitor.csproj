@@ -63,7 +63,11 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Unit\EnglishSoldier.cs" />
     <Compile Include="Items\Item.cs" />
-    <Compile Include="Unit\IEnglishSoldier.cs" />
+    <Compile Include="Unit\Interfaces\IEnglishSoldier.cs" />
+    <Compile Include="Unit\Interfaces\IRomanSoldier.cs" />
+    <Compile Include="Unit\Interfaces\IUnit.cs" />
+    <Compile Include="Unit\Interfaces\IViking.cs" />
+    <Compile Include="Unit\Interfaces\IWorker.cs" />
     <Compile Include="Unit\RomanSoldier.cs" />
     <Compile Include="Unit\Unit.cs" />
     <Compile Include="Unit\Viking.cs" />
@@ -71,6 +75,8 @@
     <Compile Include="Visit\Interfaces\IVisitor.cs" />
     <Compile Include="Visit\Interfaces\IVisitorBuild.cs" />
     <Compile Include="Visit\Interfaces\IVisitorFight.cs" />
+    <Compile Include="Visit\Interfaces\IVisitorNormalBuild.cs" />
+    <Compile Include="Visit\Interfaces\IVisitorNormalFight.cs" />
     <Compile Include="Visit\VisitorNormalBuild.cs" />
     <Compile Include="Visit\VisitorNormalFight.cs" />
   </ItemGroup>

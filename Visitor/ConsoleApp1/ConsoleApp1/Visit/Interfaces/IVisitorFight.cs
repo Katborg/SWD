@@ -8,6 +8,9 @@ namespace Visitor
 {
 	public interface IVisitorFight : IVisitor
 	{
-
+		new double Visit(IEnglishSoldier unit);
+		new double Visit(IRomanSoldier unit);
+		new double Visit(IUnit unit);
+		new double Visit(IViking unit);
 	}
 }

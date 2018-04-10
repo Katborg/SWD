@@ -7,7 +7,7 @@ using Visitor;
 
 namespace ConsoleApp1.Visit
 {
-	class VisitorNormalBuild : IVisitorBuild
+	class VisitorNormalBuild : IVisitorBuild, IVisitorNormalBuild
 	{
 		public double Visit(IUnit unit)
 		{

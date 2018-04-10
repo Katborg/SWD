@@ -11,7 +11,7 @@ namespace Visitor
 			IViking johnViking = new Viking();
 			
 			johnViking.AddItem(new WarAxe());
-			johnViking.AddItem(new WarAxe());
+			johnViking.AddItem(new Axe());
 			johnViking.Name = "John The Viking";
 
 			IRomanSoldier jasperRoman = new RomanSoldier();
@@ -31,7 +31,7 @@ namespace Visitor
 
 			Fight(jasperTheRomanBuilder, bob);
 			BuildHouse(jasperTheRomanBuilder, bob);
-
+			BuildHouse(johnViking, bob);
 			Console.ReadKey();
 		}
 
