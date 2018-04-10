@@ -1,6 +1,6 @@
 ﻿namespace Visitor
 {
-	interface ITool
+	interface ITool : IItem
 	{
 		double GetPower();
 	}

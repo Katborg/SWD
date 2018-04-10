@@ -1,6 +1,6 @@
 ﻿namespace Visitor
 {
-	interface IAxe
+	interface IAxe : ITool
 	{
 		double GetPower();
 	}
