@@ -8,6 +8,7 @@ namespace Visitor
 		double Visit(IViking unit);
 		double Visit(IEnglishSoldier unit);
 		double Visit(IRomanSoldier unit);
+		double Visit(IWorker unit);
 
 	}
 }

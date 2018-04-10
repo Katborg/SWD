@@ -13,6 +13,6 @@ namespace ConsoleApp1.Visit
 		new double Visit(IRomanSoldier unit);
 		new double Visit(IUnit unit);
 		new double Visit(IViking unit);
-		double Visit(IWorker unit);
+		new double Visit(IWorker unit);
 	}
 }

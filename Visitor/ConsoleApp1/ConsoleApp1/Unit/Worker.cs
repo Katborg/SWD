@@ -8,6 +8,6 @@ namespace Visitor
 {
 	public class Worker : Unit, IWorker
 	{
-		
+		public override double AcceptVisit(IVisitor visitor) => visitor.Visit(this);
 	}
 }

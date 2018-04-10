@@ -40,38 +40,20 @@ namespace Visitor
 		{
 			Console.WriteLine("\nFighting  games!!!");
 			Console.WriteLine($"In the first corner we have:");
-			double unitOnePower = CalcFightPower(unitOne);
+			double unitOnePower = unitOne.AcceptVisit(new VisitorNormalFight()); ;
 
 			Console.WriteLine($"{unitOne.Name} with");
 			unitOne.PrintItems();
 			Console.WriteLine($"and a power of {unitOnePower}");
 
 			Console.WriteLine($"In the other corner we have:");
-			double unitTwoPower = CalcFightPower(unitTwo);
+			double unitTwoPower = unitTwo.AcceptVisit(new VisitorNormalFight());
 
 			Console.WriteLine($"{unitTwo.Name} with");
 			unitTwo.PrintItems();
 			Console.WriteLine($"and a power of {unitTwoPower}");
 
 			Console.WriteLine("So the winner is {0}", (unitOnePower > unitTwoPower ? unitOne.Name : unitTwo.Name));
-		}
-		static double CalcFightPower(IUnit unit)
-		{
-			if (unit is Viking)
-			{
-				return new VisitorNormalFight().Visit((IViking)unit);
-			}
-			if (unit is RomanSoldier)
-			{
-				return new VisitorNormalFight().Visit((IRomanSoldier)unit);
-			}
-			if (unit is EnglishSoldier)
-			{
-				return new VisitorNormalFight().Visit((IEnglishSoldier)unit);
-			}
-
-			return new VisitorNormalFight().Visit(unit);
-
 		}
 		#endregion
 	
@@ -80,22 +62,22 @@ namespace Visitor
 		{
 			Console.WriteLine("\nBuilding games!!!");
 			Console.WriteLine($"At the first building ground we have:");
-			double unitOnePower = CalcBuildtPower(unitOne);
+			double unitOnePower = unitOne.AcceptVisit(new VisitorNormalBuild());
 
 			Console.WriteLine($"{unitOne.Name} with");
 			unitOne.PrintItems();
 			Console.WriteLine($"and a buildpower of {unitOnePower}");
 
 			Console.WriteLine($"At the Other building ground we have:");
-			double unitTwoPower = CalcBuildtPower(unitTwo);
+			double unitTwoPower = unitTwo.AcceptVisit(new VisitorNormalBuild());
 
 			Console.WriteLine($"{unitTwo.Name} with");
 			unitTwo.PrintItems();
 			Console.WriteLine($"and a buildpower of {unitTwoPower}");
 			Console.WriteLine("\nA house takes 30 build power");
 
-				int unitOneRound = CalcHouseBuildTime(unitOnePower);
-				int unitTwoRound = CalcHouseBuildTime(unitTwoPower);
+			int unitOneRound = CalcHouseBuildTime(unitOnePower);
+			int unitTwoRound = CalcHouseBuildTime(unitTwoPower);
 
 
 			Console.WriteLine($"So it took {unitOne.Name} {unitOneRound} to build a house");
@@ -105,29 +87,6 @@ namespace Visitor
 			Console.WriteLine(unitTwoRound == unitOneRound
 				? $"Whey are equally fast!!"
 				: $"So the Winner is claerly {(unitOneRound < unitTwoRound ? unitOne.Name : unitTwo.Name)} ");
-		}
-		static double CalcBuildtPower(IUnit unit)
-		{
-			if (unit is Worker)
-			{
-				return new VisitorNormalBuild().Visit((Worker)unit);
-			}
-			if (unit is Viking)
-			{
-				return new VisitorNormalBuild().Visit((IViking)unit);
-			}
-			if (unit is RomanSoldier)
-			{
-				return new VisitorNormalBuild().Visit((IRomanSoldier)unit);
-			}
-			if (unit is EnglishSoldier)
-			{
-				return new VisitorNormalBuild().Visit((IEnglishSoldier)unit);
-			}
-			
-
-			return new VisitorNormalBuild().Visit(unit);
-
 		}
 
 		static int CalcHouseBuildTime(double buildpower)

@@ -90,5 +90,10 @@ namespace Visitor
 
 			return power;
 		}
+
+		public double Visit(IWorker unit)
+		{
+			return Visit((IUnit) unit);
+		}
 	}
 }

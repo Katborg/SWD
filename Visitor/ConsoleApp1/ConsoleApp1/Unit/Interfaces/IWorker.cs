@@ -1,7 +1,7 @@
 ﻿namespace Visitor
 {
-	interface IWorker : IUnit
+	public interface IWorker : IUnit
 	{
-		
+		double AcceptVisit(IVisitor visitor);
 	}
 }
