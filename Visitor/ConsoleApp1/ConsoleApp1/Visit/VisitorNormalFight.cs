@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 namespace Visitor
 {
-	public class  VisitorNormalFight : IVisitorFight, IVisitorNormalFight
+	public class  VisitorNormalFight : IVisitorFight
 	{
 		public double Visit(IUnit unit)
 		{

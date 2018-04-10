@@ -75,8 +75,6 @@
     <Compile Include="Visit\Interfaces\IVisitor.cs" />
     <Compile Include="Visit\Interfaces\IVisitorBuild.cs" />
     <Compile Include="Visit\Interfaces\IVisitorFight.cs" />
-    <Compile Include="Visit\Interfaces\IVisitorNormalBuild.cs" />
-    <Compile Include="Visit\Interfaces\IVisitorNormalFight.cs" />
     <Compile Include="Visit\VisitorNormalBuild.cs" />
     <Compile Include="Visit\VisitorNormalFight.cs" />
   </ItemGroup>
