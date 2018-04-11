@@ -30,7 +30,7 @@ namespace Visitor
 			//give viking extra power if he has axes and calc power
 			foreach (var item in items)
 			{
-				if(item is IWeapon || item is IDefence)
+				if (item is IWeapon || item is IDefence)
 				{
 					power += item.GetPower();
 				}
