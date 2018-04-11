@@ -1,7 +1,6 @@
 ﻿using System;
 using ConsoleApp1.Visit;
 
-
 namespace Visitor
 {
 	class Program
@@ -78,7 +77,6 @@ namespace Visitor
 
 			int unitOneRound = CalcHouseBuildTime(unitOnePower);
 			int unitTwoRound = CalcHouseBuildTime(unitTwoPower);
-
 
 			Console.WriteLine($"So it took {unitOne.Name} {unitOneRound} to build a house");
 			Console.WriteLine($"So it took {unitTwo.Name} {unitTwoRound} to build a house");
