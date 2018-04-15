@@ -12,5 +12,5 @@ namespace Visitor
 		{
 			return visitor.Visit(this);
 		}
-	}
+    }
 }
